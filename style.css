@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e8eaf6); /* Subtle gradient background */
+  color: #333;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(90deg, #1a73e8, #007acc); /* Gradient nav bar */
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.nav-link i {
+  margin-right: 8px;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(135deg, #f6d365, #fc7a8f); /* Vibrant gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #333;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* About Section */
+.about {
+  margin-top: 40px;
+  padding: 30px 20px;
+}
+
+.about-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.about-card h2 {
+  color: #007acc;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.about-card .cta-button {
+  background: #1a73e8;
+  color: white;
+}
+
+.about-card .cta-button:hover {
+  background: #007acc;
+}
+
+/* Resume Section */
+.resume, .bio-data {
+  background: #fff;
+  padding: 50px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resume h2, .bio-data h2 {
+  color: #007acc;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.resume-card, .bio-data-card {
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.resume-card h3, .bio-data-card h3 {
+  color: #ff9800;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 20px;
+  padding: 20px 0;
+  background: #007acc;
+  color: white;
+  font-size: 0.9rem;
+}
+
+
+/* Animations */
+.hero, .about-card, .resume, .bio-data {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
